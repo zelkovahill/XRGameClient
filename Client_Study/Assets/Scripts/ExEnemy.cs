@@ -4,7 +4,7 @@ public class ExEnemy : MonoBehaviour
 {
     public ExPlayer targetPlayer;
 
-    private int damage = 20;
+    public int damage = 20;
 
     public void AttackPlayer(ExPlayer player)
     {
@@ -15,7 +15,7 @@ public class ExEnemy : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            print("ÇÃ·¹ÀÌ¾î °ø°Ý");
+            print("ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½ï¿½");
             if (targetPlayer != null)
             {
                 AttackPlayer(targetPlayer);
