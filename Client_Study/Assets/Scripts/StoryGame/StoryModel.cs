@@ -23,16 +23,18 @@ public class StoryModel : ScriptableObject
     [TextArea(10, 10)]  // 인스펙터 text 영역 설정
     public string storyText;
     public Option[] options;
+    
 
     [System.Serializable]
     public class Option
     {
         public string optionText;
-        public string buttonValue;
+        public string buttonText;
 
         public EventCheck eventCheck;
     }
 
+    [System.Serializable]
     public class EventCheck
     {
         public int checkValue;

@@ -82,8 +82,8 @@ namespace STROYGAME
         {
             StoryModel tempStoryModels = FindStoryModel(number);
 
-            // StorySystem.Instance.currentStoryModel = tempstoryModels;
-            // StorySystem.Instance.CoShowText();
+            StorySystem.instance.currentStoryModel = tempStoryModels;
+            StorySystem.instance.CoShowText();
         }
         
         public void ApplyChoice(StoryModel.Result result)   // 스토리 선택시 결과
